@@ -1,0 +1,11 @@
+[versions]
+kotlin = "2.4.20"
+loader = "0.19.4"
+asm = "9.10.1"
+
+[libraries]
+fabric = { group = "net.fabricmc", name = "fabric-loader", version.ref = "loader" }
+asm = { group = "org.ow2.asm", name = "asm", version.ref = "asm" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

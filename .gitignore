@@ -1,0 +1,6 @@
+example.jar
+.gradle/
+.idea/
+.kotlin/
+*/build/
+build/
