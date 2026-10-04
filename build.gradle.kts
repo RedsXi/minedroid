@@ -14,5 +14,4 @@ repositories {
 dependencies {
     implementation(libs.fabric)
     implementation(project(":iul"))
-    implementation(files("example.jar"))
 }
