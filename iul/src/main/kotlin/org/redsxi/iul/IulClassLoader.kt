@@ -11,4 +11,9 @@ class IulClassLoader(
             defineClass(null, bytes, 0, bytes.size)
         }
     }
+
+    companion object {
+	fun IulConfig.loader(): IulClassLoader
+		= IulClassLoader(this)
+    }
 }

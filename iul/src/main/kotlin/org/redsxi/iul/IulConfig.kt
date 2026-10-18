@@ -30,4 +30,21 @@ class IulConfig(
         classes.values.forEach(func)
         parent?.classes?.values?.forEach(func)
     }
+
+    // For IUL Config Script:
+    // Will complete the config to Kotlin like this:
+    //  Original:
+    //  Class("example") { /* */ }
+    //
+    //  Output .kt:
+    //  package test
+    //
+    //  fun iulConfig() {
+    //  /* the original config file content */
+    //  }
+    
+    fun Class(name: String, action: IulClass.() -> Unit) {
+    	val config = addClass(name)
+	config.action()
+    }
 }
